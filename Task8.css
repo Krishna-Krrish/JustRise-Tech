@@ -1,0 +1,112 @@
+form{
+    margin: 0 20%;
+    background-color: azure;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.Cname-field{
+    display: flex;
+    /* flex-wrap: nowrap; */
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+    /* justify-content: space-between; */
+}
+
+.Cname-field input, .Cname-field select{
+    width: 100%;
+}
+
+input{
+    padding: 4px;
+}
+
+input[type="text"]{
+    font-size: 15px;
+}
+
+.customer-address{
+    margin-top: 10px;
+}
+
+.Caddress-Street-field{
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.Caddress-area-field1{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+
+.Caddress-area-field1 input{
+          width: 100%;
+}
+
+.Caddress-area-field2{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.Caddress-area-field2 input, .Caddress-area-field2 select{
+    width: 100%;
+}
+
+.Cu-contact{
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    width: 98%;
+}
+
+.Cu-contact div, .Cu-contact input{
+    width: 100%;
+}
+
+.Cu-contact input{
+    margin-top: 10px;
+}
+
+.Cu-detail{
+    display: flex;
+    gap:20px;
+    width:98%;
+    margin-top: 10px;
+}
+
+.Cu-detail div, .Cu-detail input{
+    width: 100%;
+}
+
+.Cu-detail input{
+    margin-top: 10px;
+}
+
+.submit-btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn input{
+    padding: 10px 20px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
