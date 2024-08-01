@@ -1,153 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 10</title>
-
-    <style>
-        .bg-1 {
-            background: red url("https://wallpapers.com/images/featured/city-background-vk49vrjolueijq7a.jpg") no-repeat bottom;
-            background-size: cover;
-            height: 200px;
-            width: 100%;
-            color: white;
-            padding: 10px;
-        }
-
-        .bg-2 {
-            background-image: url("./Justrise\ logo.png");
-            background-color: bisque;
-            background-size: 500px;
-            height: 300px;
-            width: 100%;
-        }
-
-        .bg-3 {
-            background-image: url("./Justrise\ logo.png");
-            background-size: cover;
-            background-color: black;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            height: 500px;
-            width: 100%;
-            color: azure;
-        }
-
-        .bg-4 {
-            background-image: url("./Justrise\ logo.png");
-            background-size: 500px;
-            background-repeat: no-repeat;
-            height: 300px;
-            width: 30%;
-            overflow: scroll;  
-        }
-    </style>
+    <link rel="stylesheet" href="Task10.css">
+    <title>Task10</title>
 </head>
-
 <body>
-    <div class="bg-1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia delectus maxime iste eligendi tenetur
-            magnam quaerat ipsa, facilis repellat aliquam, doloribus in nostrum! Aut, veniam ipsa. Officiis adipisci
-            quis quidem doloribus expedita vel nostrum debitis similique labore a, fugiat cumque velit deserunt odio
-            ipsam sequi reiciendis suscipit iure rerum sint qui blanditiis! Vel deserunt quia quisquam ipsam distinctio
-            saepe reprehenderit earum iste culpa quae vero, illum eligendi tempore rem. Dignissimos ab unde quis libero
-            amet, debitis error culpa consectetur. Cum autem commodi, nostrum nobis officiis consequatur distinctio esse
-            dicta laboriosam, reprehenderit corrupti, optio assumenda rerum delectus quos et incidunt aliquam.</p>
-    </div>
+    <div class="container">
+        <div class="left-sec">
+            <div>
+                <img src="./lock.png" alt="" class="lock-img">
+                <h1>Welcom Back</h1>
+                <!-- <a href="" class="login-g"><img src="data:image/png;base64,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" alt="">Log in with Google</a> -->
+               <div class="login-google">
+                <img src="data:image/png;base64,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" alt="">
+                <a href=""> Log in with google</a>
+               </div> 
+                <br>
+                <a href="">OR LOGIN WITH EMAIL</a>    
+            </div>
 
-    <div class="bg-2">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur doloribus omnis, rem hic
-            molestias inventore ratione distinctio deleniti, suscipit dicta quas quidem at expedita commodi officiis.
-            Fugit eos optio eligendi sint vitae facilis ad illo facere, perferendis perspiciatis numquam ea maxime
-            itaque reprehenderit. Quis, iste? Fugiat delectus corporis esse praesentium odio hic suscipit illo, ipsum
-            velit sapiente molestias nobis, laboriosam facere iure cupiditate recusandae saepe maxime! Amet earum veniam
-            ipsa mollitia eveniet deserunt. Nemo qui assumenda quis molestiae beatae sed debitis voluptas accusamus.
-            Placeat voluptas praesentium nam earum optio, ipsa blanditiis, fugiat error pariatur soluta reprehenderit,
-            harum obcaecati voluptatum est eveniet sequi doloremque! Eligendi similique sit quod temporibus, at eius
-            quos nam officia, nihil necessitatibus, soluta cumque fuga! Maiores, officiis molestiae atque alias vero,
-            qui repudiandae, obcaecati earum nostrum placeat voluptatem eum commodi minima magnam inventore voluptatum
-            tenetur excepturi debitis similique fuga pariatur aliquid libero! Veritatis sunt ullam perspiciatis cum iure
-            quisquam nam eum ea corporis esse deserunt at commodi, laborum, deleniti et eveniet ipsam culpa minima
-            laboriosam. Ratione, quam dolore ad possimus eveniet dolorum, velit nam corporis esse nesciunt quo rem sed
-            itaque debitis. Sunt, expedita nesciunt! Quae consectetur soluta explicabo vero quos dolor voluptate
-            sapiente vel minima. Neque architecto iure quidem debitis ex labore quam molestiae cumque quis explicabo
-            sapiente laboriosam sunt pariatur porro officia nisi magnam placeat dignissimos nemo consequuntur vero,
-            expedita iusto molestias in. Quo reiciendis veritatis facilis, deserunt est atque unde deleniti iusto
-            </p>
-    </div>
+            <form action="">
+                <input type="email" placeholder="Your Email"> <br>
+                <input type="password" placeholder="Your Password"> <br>
+                <input type="checkbox" class="checkbox"> <label for="">Keep me loged in</label> <a href="">Forget Password?</a> <br>
+                <div class="submit-btn"><input type="submit"></div>
+            </form>
 
-    <div class="bg-3">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti at voluptates tempora autem quaerat!
-            Nostrum blanditiis non autem ratione possimus placeat accusamus, sapiente commodi doloremque. Quia commodi
-            error quisquam, deserunt officia dicta accusamus, assumenda culpa animi repudiandae nihil soluta,
-            accusantium magnam non iusto? Autem voluptatem debitis in non mollitia consequatur corrupti laboriosam
-            temporibus quia ea aperiam provident, voluptatum dolore. Dolorum, reiciendis ad tempora officiis dignissimos
-            maxime praesentium nihil cupiditate vero quidem illum voluptate facilis aspernatur doloremque quaerat magnam
-            perspiciatis minima! Alias facilis deleniti incidunt impedit iusto, at vero maiores fuga tempore numquam
-            nisi, labore quia assumenda corporis, explicabo provident. Amet vitae impedit voluptas incidunt ex dicta
-            animi beatae deserunt eligendi aut nihil nisi totam nesciunt iste provident fuga ad optio odio quidem
-            quisquam, id, dignissimos ab veniam exercitationem. Aliquam fuga magnam quis laboriosam excepturi in iure
-            at, repellendus quos facilis asperiores quo magni non neque. Aliquid nesciunt aspernatur corrupti debitis
-            reiciendis. Et libero ipsam vero unde dolorem. Porro, quasi. Cum aliquam explicabo magnam vel maxime
-            quibusdam repudiandae sunt, ipsa blanditiis, consequatur inventore ullam exercitationem tempore sequi
-            officia neque maiores sed. Quibusdam consequatur excepturi iusto officia vitae asperiores minus optio fugit
-            numquam fugiat. Pariatur quam alias nihil id ad a ipsam quas, at ducimus impedit libero adipisci fuga quae
-            dignissimos quidem error praesentium, ipsum quia. Quod, consequatur itaque similique omnis tempore ex
-            accusantium eveniet voluptas perspiciatis architecto. Magnam maiores rem blanditiis nihil aut culpa,
-            consequatur repellat fugiat ea officia iusto quidem, aliquid voluptas pariatur id distinctio cupiditate
-            perferendis assumenda libero a soluta velit omnis. Aspernatur quod distinctio autem neque minima commodi
-            maiores quibusdam vel nesciunt non doloremque illo, possimus magni reprehenderit suscipit quidem rem eaque
-            sapiente voluptate tenetur! Illum, fuga itaque. Perferendis aut velit, autem voluptatem, amet sit non
-            molestiae tempora iure consectetur accusamus repudiandae mollitia corrupti quos atque fuga quo et itaque
-            libero! Ipsam, sed minima quis nemo consectetur cumque accusantium non voluptatibus quas iste perferendis
-            expedita, blanditiis laborum nisi est nihil et harum repellendus ea mollitia sequi ducimus eius iure
-            reiciendis! Debitis soluta illum doloremque, id cum laudantium, nemo at quibusdam totam repellat, harum iure
-            accusantium. Natus, voluptate voluptas, quia ea consectetur, ducimus error quis dolorem illo itaque minima
-            rem praesentium? Sunt quos esse obcaecati nisi et. Impedit, cum corrupti provident autem earum laudantium
-            consequatur? Exercitationem atque, illum eveniet iure molestias iusto distinctio facilis voluptatum tenetur
-            pariatur modi reprehenderit ut. Magnam assumenda fuga placeat sit sapiente neque sequi non ea unde dicta.
-            Harum rerum eius molestiae cum omnis, adipisci nobis eum aperiam quidem eligendi corporis, consequatur
-            incidunt delectus voluptas veniam accusantium! Quas voluptate libero veniam hic vel, est minima praesentium
-            harum sit illo reprehenderit perspiciatis esse, nesciunt veritatis a laboriosam necessitatibus quisquam
-            sapiente eveniet eum odio sint, ipsum voluptas. Earum explicabo cumque culpa molestias corporis! Vel,
-            perferendis iste. Tempora ducimus, earum dolor officiis sed eaque modi perspiciatis cum voluptatem
-            voluptatum voluptate, suscipit, non sunt possimus consectetur provident illum inventore amet vitae eligendi
-            quis alias rem. Accusantium dolore, sint inventore cum optio corporis omnis, aspernatur iure dolor autem
-            asperiores eaque.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet laboriosam sapiente quia cumque veniam tempora
-            harum ex accusamus illum? Natus facere provident exercitationem molestias ipsa deserunt nostrum id quod
-            nobis tempora nulla corporis dolorum temporibus iste esse quidem, voluptatem ex, vitae cumque quae quasi,
-            non aliquid eius. Ab officiis a tempore amet id odio. Laborum tenetur, possimus dolore eos eaque
-            perspiciatis architecto iusto saepe, sunt ad illo sit, modi dolor similique veniam iure enim minus facilis
-            voluptatum ducimus! Corporis iure modi tenetur repellendus, ratione officiis porro provident aut ea earum!
-            Asperiores impedit totam optio dolores assumenda necessitatibus, odio beatae maiores dolorum iste. Vero
-            labore ratione, nam odit ut autem cumque quis excepturi vitae harum voluptatum obcaecati nemo animi officiis
-            pariatur officia facere at culpa aspernatur molestias rem. Veritatis nulla, nam nobis ducimus dolores
-            molestiae quod corrupti alias rerum fuga expedita libero nesciunt facilis quis explicabo earum, incidunt ea
-    </p>
-    </div>
+            <hr>
 
-    <div class="bg-4">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi beatae dolore inventore pariatur rerum,
-            laudantium veniam delectus facilis magni cupiditate voluptate, tempore consequuntur blanditiis aspernatur
-            consequatur at. Temporibus repellendus quo qui at aperiam vero impedit architecto doloremque quas. Repellat,
-            placeat sequi. Earum ratione nihil expedita cumque excepturi odio molestias, sit iure beatae placeat quidem
-            quibusdam voluptatum animi ad facere culpa dolores a, autem deleniti, vero libero ab quasi doloremque fugit.
-            Animi nemo culpa eveniet cupiditate qui blanditiis cum iure possimus dolorem aspernatur tempora in amet
-            voluptatum totam doloribus corporis iusto et quos provident, voluptate corrupti? Corporis pariatur iure
-            voluptatum harum commodi fuga cumque soluta dolore, recusandae molestias facere quidem quam minus quisquam
-            quaerat distinctio nobis, eius repellat ea! Eligendi facilis sapiente sint laudantium quibusdam. Molestiae
-            rerum consequuntur molestias facilis consectetur fugit minima ea commodi nisi earum fugiat maiores vero
-            quaerat minus qui quidem aspernatur, vitae obcaecati? Sapiente quae corporis quasi accusamus qui dolores
-            quia, voluptatibus in obcaecati totam mollitia, veniam pariatur perferendis sequi unde ad quam laudantium
-            cum odit at error, esse quaerat sit minima! Minus, odio provident. Dolore ducimus fugiat nesciunt quisquam
-            quas fugit culpa eum, sit veritatis similique a nobis corrupti eos officia fuga accusamus voluptas dolorem
-            cumque.</p>
+            <span>Don't have an account yet?</span> <a href="">Sign Up</a>
+
+        </div>
+
+        <div class="right-sec">
+            <h1>New Update Available</h1>
+            <p>We have added some new <br> awesome features</p>
+            <button>Learn More</button>
+        </div>
     </div>
 </body>
-
 </html>
