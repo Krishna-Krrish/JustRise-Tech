@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    display: flex;
+    padding: 0px 10px;
+}
+
+
+.container .left-section{
+    padding-top: 10px;
+    background-color: white;
+    padding-right: 50px;
+    width: 15%;
+}
+
+.container .left-section img{
+    width: 100%;
+    text-align: center;
+}
+
+
+.container .left-section .menu{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: rgb(41, 41, 41);
+    margin-left: 100px;
+}
+
+
+.container .left-section .menu i{
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.container .left-section .menu p{
+    font-size: 20px;
+}
+
+.container .left-section .log-out{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(146, 146, 146);
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+#container{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 50px;
+    padding:20px 50px;
+}
+
+.right-section h1{
+    margin-top: 50px;
+}
+
+.right-section .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 350px;
+}
+
+.right-section .header .left input{
+    padding: 15px;
+    padding-right: 180px;
+    outline: none;
+    width: 250%;
+    border: none;
+    border-radius: 10px;
+}
+
+.right-section .header .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-section .header .right .icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-section .header .right img{
+    width: 15%;
+}
+
+
+.right-section{
+    padding-top: 20px;
+    background-color: rgb(245, 245, 245);
+    padding-left: 100px;
+    width: 100%;
+}
+
+.right-section .profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.right-section .profile img{
+    width: 100px;
+}
+
+.right-section form{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+.form-row {
+    display: grid;
+    /* grid-column: span 3; */
+    grid-template-rows: max-content;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.form-row label {
+    margin-right: 10px;
+    width: 100px; /* Adjust the width as needed */
+    margin-bottom: 10px;
+}
+
+.form-row select{
+    flex: 5;
+    padding: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    width: 84%;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.form-row input {
+    flex: 5;
+    padding: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+textarea{
+    outline: none;
+    width: 100%;
+}
+
+.form-container {
+    width: 700px; Adjust the width of the form container as needed
+    margin: 0 auto; /* Center the form */
+}
