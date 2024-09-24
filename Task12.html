@@ -10,90 +10,133 @@
 </head>
 <body>
 
-    <header>
-        <div class="left">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
-        <div class="right">
-            <i class="fa-solid fa-bell"></i>
-            <img src="./pngwing.com.png" alt="">
-            <p>Sara <i class="fa-solid fa-caret-down"></i></p>
-        </div>
-       
-    </header>
     
   <div class="container">
     <div class="left-section">
 
-        <h1>User Profile</h1>
+        <img src="https://static.vecteezy.com/system/resources/previews/022/909/075/non_2x/half-circle-dot-logo-vector.jpg" alt="">
 
         <div class="menu" id="user">
-            <i class="fa-solid fa-user"></i>
-            <p>User Info</p>
+            <i class="fa-solid fa-table-columns"></i>
+            <p>Dashboard</p>
         </div>
 
         <div class="menu">
-            <i class="fa-regular fa-heart"></i>
-            <p>Favorites</p>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Order</p>
         </div>
 
         <div class="menu">
-            <i class="fa-regular fa-star"></i>
-            <p>Watchlist</p>
+            <i class="fa-solid fa-gift"></i>
+            <p>Product</p>
+        </div>
+
+        <div class="menu">
+            <i class="fa-solid fa-circle-user"></i>
+            <p>Customer</p>
+        </div>
+
+        <div class="menu">
+            <i class="fa-solid fa-person"></i>
+            <p>Employee</p>
+        </div>
+
+        <div class="menu">
+            <i class="fa-solid fa-money-bill-1-wave"></i>
+            <p>Billing</p>
+        </div>
+
+        <div class="menu">
+            <i class="fa-solid fa-chart-line"></i>
+            <p>Analytics</p>
         </div>
 
         <div class="menu">
             <i class="fa-solid fa-gear"></i>
-            <p>Setting</p>
+            <p>Settings</p>
+            <i class="fa-solid fa-caret-down"></i> <br>
         </div>
 
         <div class="menu">
             <i class="fa-regular fa-bell"></i>
-            <p>Notification</p>
+            <p>Help</p>
         </div>
+
 
         <div class="log-out">
             <i class="fa-solid fa-right-from-bracket"></i>
             <p>Log Out</p>
         </div>
-
     </div>
 
+
     <div class="right-section">
-        <div class="profile">
-            <img src="./pngwing.com.png" alt="">
-            <p>Sara <br><span>New york,USA</span></p>
+
+        <div class="header">
+            <div class="left">
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="right">
+                <div class="icon">
+                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+
+                <div class="profile">
+                    <img src="./pngwing.com.png" alt="">
+                    <p>Johncooper <br><span>Johncooper@abc.com</span></p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                
+            </div>
         </div>
 
-        <div class="form-container">
-            <form action="">
-                <div class="form-row">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
-                </div>
-                <div class="form-row">
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName" name="fullName">
-                </div>
-                <div class="form-row">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div class="form-row">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form-row">
-                    <label for="location">Location</label>
-                    <input type="text" id="location" name="location">
-                </div>
-                <div class="form-row">
-                    <label for="postalCode">Postal Code</label>
-                    <input type="text" id="postalCode" name="postalCode">
-                </div>
-                <input type="submit" value="Save Changes">
-            </form>
+        <h1>Account Information</h1>
+
+
+        <div id="container">
+            <div class="profile">
+                <img src="./pngwing.com.png" alt="">
+            </div>
+    
+            <div class="form-container">
+                <form action="">
+                    <div class="form-row">
+                        <label for="name">First Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-row">
+                        <label for="fullName">Last Name</label>
+                        <input type="text" id="fullName" name="fullName">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-row">
+                        <label for="location">Date of birth</label>
+                        <input type="Date" id="location" name="location">
+                    </div>
+                    <div class="form-row">
+                        <label for="location">Country</label>
+                        <select name="" id="">
+                            <option value="">Bangaladesh</option>
+                            <option value="">Bangaladesh</option>
+                            <option value="">Bangaladesh</option>
+                        </select>
+                    </div>
+
+                    
+                        <label for="postalCode">Bio</label>
+                        <textarea name="" id="" cols="100" rows="6"></textarea>
+                    
+
+                </form>
+            </div>
         </div>
     </div>
   </div>
