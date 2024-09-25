@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouncing Ball Animation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000000;
+    }
+
+    .fade{
+        height: 50px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        top: 200px;
+        box-shadow: 1px 5px 10px white;
+    }
+    
+    .ball {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #3498db;
+      position: relative;
+      animation: bounce 2s infinite;
+    }
+
+    .line{
+        height: 60px;
+        width: 200px;
+        background-color: rgba(255, 0, 0, 0.123);
+        position: fixed;
+        bottom: 80px;
+        border-radius: 50%;
+        opacity: 0.5;
+        box-shadow: 1px 5px 10px rgba(255, 255, 255, 0.164);
+    }
+
+    @keyframes bounce {
+      0%,100%{
+        top: -100px;
+        animation-timing-function: ease-in;
+        opacity: 0.1;
+      }
+      50% {
+        top: 200px;
+        animation-timing-function: ease-out;
+        opacity: 2;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <div class="ball"></div>
+    <div class="fade"></div>
+    <div class="line"></div>
+  
+</body>
+</html>
